@@ -1,0 +1,142 @@
+/* elementos base */
+:root {
+  --vermelha: #e50914;
+  --preta: #141414;
+  --cinza: #aaa;
+  --branca100: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--preta);
+  font-family: 'Roboto', sans-serif;
+  color: var(--branca100);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--vermelha);
+}
+
+header nav {
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--cinza);
+}
+
+header nav a:hover {
+  color: var(--branca100);
+}
+
+/*hide hamburger menu*/
+header nav.hamburger {
+  display: none;
+}
+
+/* filme */
+.filme-principal {
+  height: 500px;
+
+  font-size: 16px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('/assets/background.jpg');
+  background-size: cover;
+  background-position: center 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.selo-netflix {
+  margin-top: 7%;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.selo-netflix > span.color {
+  color: var(--vermelha);
+}
+
+.filme-principal .titulo {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.filme-principal .container {
+  width: 60%;
+  text-align: justify;
+}
+
+.filme-principal .descricao {
+  margin-top: 2%;
+  margin-bottom: 90px;
+}
+
+.botao {
+  padding: 15px 30px;
+  border: none;
+  margin-right: 15px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--branca100);
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: var(--branca100);
+  color: var(--preta);
+  transition: ease all 0.5s;
+}
+
+button.botao svg {
+  margin-right: 7px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+/*carrossel imagens*/
+
+.carrossel-filmes {
+  margin-top: 1%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
